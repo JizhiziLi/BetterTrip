@@ -1,0 +1,89 @@
+.header {
+	padding: 20px 0px;
+}
+.header-main {
+  padding: 0px 25px 0px 10px;
+}
+.logo a h1 {
+	font-family:"Georgia";
+  font-size: 3em;
+  font-weight: 700;
+  color: #000;
+  margin: 0em;
+}
+
+.header-left {
+	float: left;
+	padding: 5px 0px 0px 0px;
+}
+.header-right {
+	float: right;
+	text-align: center;
+	padding: 20px 0px 0px 0px;
+}
+
+.destitle {
+font-family: "Courier", Georgia, Serif;
+font-size: 22px;
+font-weight: 500;
+text-align: left;
+padding: 10px 0px 0px 55px;
+color:#000;
+
+
+
+}
+
+.descontent{
+
+font-family: "Courier", Georgia, Serif;
+font-size: 18px;
+font-weight: 300;
+text-align: left;
+padding: 10px 0px 0px 55px;
+color:#000;
+
+}
+
+
+
+.top-nav {
+	display: inline-block;
+}
+.top-nav  ul {
+	padding: 0px;
+	list-style: none;
+}
+.top-nav  ul li {
+	display: inline-block;
+}
+.top-nav  ul li a {
+	font-size: 20px;
+	font-weight: 400;
+	padding:0px 10px;
+	color: #777;
+}
+.top-nav  ul li a:hover,.top-nav  ul li a.active {
+	text-decoration:none;
+	color:#3488d0;
+}
+
+.logo {
+	margin: 0px 45px 0px 0px;
+	display: inline-block;
+}
+.logo  a {
+	display: block;
+	text-decoration: none;
+
+}
+
+.foot{
+font-family: "Courier", Georgia, Serif;
+font-size: 12px;
+font-weight: 300;
+text-align: center;
+color:#000;
+
+}
+

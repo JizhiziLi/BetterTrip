@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<html>
+<head>
+	<title>Home</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+	<link rel="stylesheet" type="text/css" href="css/HPstyle.css"  />
+
+<script src="js/SlideTrans.js"></script>
+
+
+</head>
+<body>
+
+	<div class="header">
+		<div class="container">
+		<div class="header-main">
+			
+				<div class="logo">
+					<a href="../homepage"><h1>Better Trip</h1></a>
+				</div>
+
+				<div class="header-right">
+					<div class="top-nav">
+					<ul> 
+						<li><a href="../homepage">Home</a></li>
+						<li><a href="service">Service</a></li>
+						<li><a href="about">About</a></li>
+					    <li><a href="contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+</div>
+</div>
+
+
+
+<style type="text/css"> 
+.slideimage, .slideimage img{width:1280px; height:500px;}
+
+
+</style>
+<div class="slideimage" id="slideimageid">
+
+
+
+				<div style="position:absolute;z-index:2;left:60px;top:330px;font-family:Serif;font-size:35px;color:white"> &#8226;  We Provide You A Better Trip
+
+					<br>				
+					 &#8194;&#8194;&#8194;&#8226;  In Australia Or Even In The Whole World
+				
+			</br>
+				</div>
+
+	<table id="idSlider" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td><img src="image/slides1.jpg" title="seeme?" alt="homepage photo1"  sizes="16x16 32x32"/>
+	
+
+
+
+			</td>
+			<td><img src="image/slides2.jpg" alt="homepage photo2"  sizes="16x16 32x32"/></td>
+			<td><img src="image/slides3.jpg" alt="homepage photo3"  sizes="16x16 32x32"/></td>
+		</tr>
+	</table>
+</div>
+<script>
+new SlideTrans("slideimageid", "idSlider", 3, { Vertical: false }).Run();
+</script>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<div class="secondtitle"><p>Home</p>
+</div>
+
+<div class="destitle">
+	<p >{{ homepage_des_title}}</p>
+</div> 
+
+<br>
+
+
+
+
+<div class="descontent"><p>{{ homepage_des_content}}</p></div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!--  Following is the trial of template   -->
+
+
+
+<table style="margin-left:40px" >
+
+
+<!-- tr -->
+<tr>
+
+			{% for key,value in state_dic.items %}
+
+{% ifequal forloop.counter 5%}
+<tr>
+	</tr>
+	{% endifequal %}
+	
+
+<td width="300" ><div class="grid">
+<figure class="effect-bubba">
+
+
+
+<img src= "{{value.3}}" alt="{{key}}" />
+<figcaption>
+
+	
+<h2 style="font-family:Gerogie">{{value.0}}</h2>
+<p>{{value.1}}</p>
+<a href="{{key}}"></a>
+</figcaption>
+</figure></div></td>
+{% endfor %}
+
+
+
+
+</tr></table>
+
+
+
+
+<!--  UP is the trial of template   -->
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="foot"><p>Copyright is reserved by...</p></div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
